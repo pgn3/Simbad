@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link href="css/styleprueba.css" type="text/css" rel="stylesheet">
+      
+    <title>Pruebas css</title>
+  </head>
+  <body>
+    <button id="mostrar" onclick="mostrardatos()">Mostrar</button>
+    <div class="maindiv none" id="appear">
+    <div class="container py-3">
+      <!-- Card Start -->
+      <div class="card color">
+        <div class="row ">
+    
+          <div class="col-md-7 px-3">
+            <div class="card-block px-6">
+              <h4 class="card-title">Horizontal Card with Carousel - Bootstrap 4 </h4>
+              <p class="card-text">
+                The Carousel code can be replaced with an img src, no problem. The added CSS brings shadow to the card and some adjustments to the prev/next buttons and the indicators is rounded now. As in Bootstrap 3
+              </p>
+              <p class="card-text">Made for usage, commonly searched for. Fork, like and use it. Just move the carousel div above the col containing the text for left alignment of images</p>
+              <br>
+              <a href="#" class="mt-auto btn btn-submit  ">Solicitar adoptar</a>
+              <a href="#" class="mt-auto btn btn-submit  ">Eliminar</a>
+              <a href="#" class="mt-auto btn btn-submit  ">Editar</a>
+            </div>
+          </div>
+          <!-- Carousel start -->
+          <div class="col-md-5">
+              <img class="d-block" src="https://picsum.photos/450/300?image=1072" alt="">
+          </div>
+          <!-- End of carousel -->
+        </div>
+      </div>
+      <!-- End of card -->
+    
+    </div>
+  </div>
+  <div class="espacio"></div>
+    <script src="js/jquery-2.2.3.min.js"></script>
+    <script src="js/bootstrap.js"></script>  
+    <script src="js/Grafico.js"></script>
+    <script>
+      function mostrardatos(){
+            $(".maindiv").fadeIn(600);
+		        $(".maindiv").removeClass("none");
+
+      }
+      $(".maindiv").click(function () {
+        $(".maindiv").fadeOut(600);
+        $("#appear").addClass("none");
+    });
+</script>
+ 
+  </body>
+</html>
